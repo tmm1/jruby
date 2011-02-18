@@ -1797,8 +1797,10 @@ public class RubyClass extends RubyModule {
     protected ObjectMarshal marshal;
     private Set<RubyClass> subclasses;
     public static final int CS_IDX_INITIALIZE = 0;
+    public static final int CS_IDX_ALLOCATE = 1;
     public static final String[] CS_NAMES = {
-        "initialize"
+        "initialize",
+        "allocate"
     };
     private final CallSite[] baseCallSites = new CallSite[CS_NAMES.length];
     {
